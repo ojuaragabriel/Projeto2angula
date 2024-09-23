@@ -1,0 +1,32 @@
+@if (mostrarAddTarefa) {
+    <app-button text="Fechar" color="red" (btnClick)="AlteraVisualizacao(false)"></app-button>
+}@else {
+    <app-button text="Adicionar Aniversariante" color="green" (btnClick)="AlteraVisualizacao(true)"></app-button>
+}
+
+<form (ngSubmit)="onSubmit()" *ngIf="mostrarAddTarefa" class="add-form">
+    <div>
+        <label for="text">Nome e data:</label>
+        <input  type="text" 
+                name="text" 
+                class="form-control" 
+                placeholder="Adicionar Aniversariante"
+                id="text"
+                [(ngModel)]="tarefa">
+    </div>
+
+    <div>
+        <label for="categoria">Categoria:</label>
+        <select name="categoria" id="categoria" class="form-select" [(ngModel)]="categoria">
+            <option value="CEO">CEO</option>
+            <option value="Gerente de Projetos">Gerente de Projetos</option>
+            <option value="DevOps">DevOps</option>
+            <option value="Desenvolvedor de Software">Desenvolvedor de Software</option>
+            <option value="Cientista de Dados">Cientista de Dados</option>
+            <option value="Scrum Master">Scrum Master</option>
+            <option value="Teccnico de Suporte">Teccnico de Suporte</option>
+        </select>
+    </div>
+
+    <input type="submit" value="Cadastrar aniversariante" class="btn btn-block mb-4">
+</form>

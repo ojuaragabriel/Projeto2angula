@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Altera para min-height */
+  padding: 20px;
+  color: #eaeaea; /* Cor de texto geral */
+}
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  padding: 20px; /* Ajustado para menos padding */
+  height: auto; /* Altura automática */
+  overflow-y: auto; /* Adiciona rolagem vertical */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase; /* Maiúsculas */
+  font-family: 'Righteous', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fff; /* Branco vibrante */
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: center;
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #6c757d; /* Cor menos intensa */
+  color: #fff;
+  border: none;
+  padding: 8px 12px; /* Botão menor */
+  margin: 10px 0;
+  border-radius: 20px; /* Mais arredondado */
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.btn:hover {
+  background-color: #5a6268; /* Cor de hover mais suave */
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.add-form,
+.form-control {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.form-control label {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+.form-control input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.form-control input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.form-control-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-control-check label {
+  font-size: 14px;
+  color: #646;
+  font-weight: 400;
+}
+
+.form-control-check input {
+  width: auto;
+  height: 16px;
+}
+
+/* Estilos de tarefa */
+.task {
+  background: #f9f9f9;
+  margin: 10px 0;
+  cursor: pointer;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+}
+
+.task:hover {
+  background-color: #f1f1f1;
+  transform: translateY(-2px);
+}
+
+.task.reminder {
+  border-left: 5px solid #28a745;
+}
+
+.task h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.task p {
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/* Melhorias de responsividade */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 8px 12px; /* Botões menores */
+  }
+
+  .form-control input {
+    font-size: 14px;
+    height: 40px;
+  }
+
+  .task h3 {
+    font-size: 1.2rem; /* Reduz o tamanho em telas pequenas */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    padding: 10px; /* Ajusta o padding */
+  }
+
+  .task {
+    padding: 10px; /* Ajusta o padding da tarefa */
+  }
+
+  .form-control input {
+    height: 35px; /* Ajusta a altura de inputs */
+  }
+
+  .task h3 {
+    font-size: 1rem; /* Reduz o tamanho em telas pequenas */
+  }
+}

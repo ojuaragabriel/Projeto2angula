@@ -1,0 +1,33 @@
+.task {
+    background: #f9f9f9; /* Alterado para combinar com o fundo do formulário */
+    margin: 10px 0; /* Mais espaçamento para melhor separação */
+    cursor: pointer;
+    padding: 15px 25px; /* Um pouco mais de espaço para conforto */
+    border-radius: 8px; /* Adicionada borda arredondada */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); /* Sombra suave para destaque */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transição suave */
+  }
+  
+  .task:hover {
+    background-color: #f1f1f1; /* Cor de hover */
+    transform: translateY(-2px); /* Elevação leve no hover */
+  }
+  
+  .task.reminder {
+    border-left: 5px solid #28a745; /* Verde mais vibrante para consistência */
+  }
+  
+  .task h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .task p {
+    color: #666;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
