@@ -12,9 +12,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Altera para min-height */
+  min-height: 100vh;
   padding: 20px;
-  color: #eaeaea; /* Cor de texto geral */
+  color: #eaeaea;
 }
 
 .container {
@@ -25,9 +25,9 @@ body {
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-  padding: 20px; /* Ajustado para menos padding */
-  height: auto; /* Altura automática */
-  overflow-y: auto; /* Adiciona rolagem vertical */
+  padding: 20px;
+  height: auto; 
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,11 +40,11 @@ body {
 
 h1 {
   text-align: center;
-  text-transform: uppercase; /* Maiúsculas */
+  text-transform: uppercase;
   font-family: 'Righteous', sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
-  color: #fff; /* Branco vibrante */
+  color: #fff; 
   letter-spacing: 2px;
   margin-bottom: 10px;
 }
@@ -59,12 +59,12 @@ p {
 
 .btn {
   display: inline-block;
-  background-color: #6c757d; /* Cor menos intensa */
+  background-color: #6c757d;
   color: #fff;
   border: none;
-  padding: 8px 12px; /* Botão menor */
+  padding: 8px 12px;
   margin: 10px 0;
-  border-radius: 20px; /* Mais arredondado */
+  border-radius: 20px; 
   cursor: pointer;
   text-align: center;
   font-size: 14px;
@@ -76,7 +76,7 @@ p {
 }
 
 .btn:hover {
-  background-color: #5a6268; /* Cor de hover mais suave */
+  background-color: #5a6268;
 }
 
 .btn:active {
@@ -130,7 +130,7 @@ p {
   height: 16px;
 }
 
-/* Estilos de tarefa */
+
 .task {
   background: #f9f9f9;
   margin: 10px 0;
@@ -164,7 +164,7 @@ p {
   margin-top: 5px;
 }
 
-/* Melhorias de responsividade */
+
 @media (max-width: 768px) {
   .container {
     padding: 15px;
@@ -176,7 +176,7 @@ p {
 
   .btn {
     font-size: 14px;
-    padding: 8px 12px; /* Botões menores */
+    padding: 8px 12px; 
   }
 
   .form-control input {
@@ -185,7 +185,7 @@ p {
   }
 
   .task h3 {
-    font-size: 1.2rem; /* Reduz o tamanho em telas pequenas */
+    font-size: 1.2rem;
   }
 }
 
@@ -195,18 +195,18 @@ p {
   }
 
   .btn {
-    padding: 10px; /* Ajusta o padding */
+    padding: 10px; 
   }
 
   .task {
-    padding: 10px; /* Ajusta o padding da tarefa */
+    padding: 10px; 
   }
 
   .form-control input {
-    height: 35px; /* Ajusta a altura de inputs */
+    height: 35px; /
   }
 
   .task h3 {
-    font-size: 1rem; /* Reduz o tamanho em telas pequenas */
+    font-size: 1rem; 
   }
 }
