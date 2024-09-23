@@ -26,7 +26,7 @@ export class AddTaskComponent {
 
   onSubmit(){
     if(!this.tarefa) {
-      alert('Adicione uma tarefa!')
+      alert('Adicione um aniversariante!')
       return;
     }
 
